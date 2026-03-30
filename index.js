@@ -5,13 +5,13 @@ const valor = Math.floor(Math.random(1, 10) * 10);
 if (valor == 10) {
     console.log("É igual a 10");
 } else {
-    console.log(`É igual a ${valor}`);
+    console.log(`Não é 10: ${valor}`);
 };
 
 // Diferença
 
-const nome1 = "A";
-const nome2 = "B";
+const nome1 = "Nome A";
+const nome2 = "Nome B";
 
 if (nome1 != nome2) {
     console.log(`\nNomes diferentes (${nome1} e ${nome2})`);
@@ -32,11 +32,39 @@ if (numero < 10) {
 const preco = Math.floor(Math.random(10, 60) * 100);
 
 if (preco > 50) {
-    console.log(`\nConsegue comprar: ${preco}`);
+    console.log(`\nConsegue comprar: R$${preco}.00`);
 } else {
-    console.log(`\nNão consegue comprar: ${preco}`);
+    console.log(`\nNão consegue comprar: R$${preco}.00`);
 };
 
-// Menor ou igual
+// Menor/Maior ou igual
 
-const menig = Math.floor(Math.random(10, 30) * 100);
+const idade = Math.floor(Math.random(10, 30) * 100);
+
+if (idade >= 18) {
+    console.log(`\nMaior de idade: ${idade} Anos`);
+}
+
+if (idade <= 18) {
+    console.log(`\nMenor de idade: ${idade} Anos`);
+}
+
+//Operador ternário
+
+const resultado = Math.floor(Math.random(0, 10) * 10)
+
+console.log(resultado >= 7 ? `\nAprovado: Média ${resultado}.0` : `\nReprovado: Média ${resultado}.0`);
+
+console.log(idade >= 18 ? "\nAdulto" : "\nMenor");
+
+//Template literals
+
+const nome = "Enzo";
+
+console.log(`\nOlá, ${nome}!`);
+
+const produto = "Produto";
+const prodprec = Math.floor(Math.random(10, 100) * 100);
+const quantidade = Math.floor(Math.random(10, 100) * 100);
+
+console.log(`\nO produto "${produto}" Custa R${prodprec}.00 e foi recebido na quantidade de ${quantidade} produtos`);
