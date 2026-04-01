@@ -3,9 +3,9 @@
 const valor = Math.floor(Math.random(1, 10) * 10);
 
 if (valor == 10) {
-    console.log("É igual a 10");
+    console.log("true");
 } else {
-    console.log(`Não é 10: ${valor}`);
+    console.log("false");
 };
 
 // Diferença
@@ -67,4 +67,4 @@ const produto = "Produto";
 const prodprec = Math.floor(Math.random(10, 100) * 100);
 const quantidade = Math.floor(Math.random(10, 100) * 100);
 
-console.log(`\nO produto "${produto}" Custa R${prodprec}.00 e foi recebido na quantidade de ${quantidade} produtos`);
+console.log(`\nO produto "${produto}" Custa R$${prodprec}.00 e foi recebido na quantidade de ${quantidade} produtos`);
